@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body class="bg-cream font-montserrat">
+    <main class="flex justify-center items-center h-[100vh] p-20">
+      <article
+        class="flex flex-col md:flex-row w-[93.3%] md:max-w-[600px] md:min-w-[600px] sm:w-[78.1%] bg-white rounded-lg"
+      >
+        <div
+          class="overflow-hidden rounded-tl-lg rounded-tr-lg w-full md:rounded-tr-none md:rounded-bl-lg md:w-[50%]"
+        >
+          <picture class="block h-full w-full object-cover">
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/image-product-desktop.jpg"
+            />
+            <source srcset="./images/image-product-mobile.jpg" />
+            <img src="./images/image-product-mobile.jpg" alt="Perfume image" />
+          </picture>
+        </div>
+        <div class="flex flex-col p-8 gap-6 md:w-[50%] md:justify-between">
+          <span
+            class="text-grey text-xs font-medium leading-[120%] tracking-[5px] uppercase"
+            >Perfume</span
+          >
+          <h1
+            class="text-black font-fraunces text-[32px] font-bold leading-[100%] tracking-[0px]"
+          >
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p
+            class="text-grey text-sm font-medium leading-[160%] tracking-[0px]"
+          >
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="flex items-center gap-4">
+            <span
+              class="text-green-500 font-fraunces text-[32px] font-bold leading-[100%] tracking-[0px]"
+              >$149.99</span
+            >
+            <span
+              class="text-grey font-medium text-[13px] leading-[120%] tracking-[0px] line-through"
+              >$169.99</span
+            >
+          </div>
+          <button
+            type="button"
+            class="bg-green-500 hover:bg-green-700 cursor-pointer flex gap-2 py-4 text-white justify-center items-center rounded-lg font-bold text-sm leading-[110%] tracking-[0px]"
+          >
+            <img class="w-4 h-4" src="./images/icon-cart.svg" />Add to Cart
+          </button>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
